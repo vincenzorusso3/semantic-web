@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:kb="http://www.semanticweb.org/andrea/ontologies/2021/4/Musei#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="http://www.semanticweb.org/andrea/ontologies/2021/4/Musei#Maddalena_penitente">
+    <rdf:type rdf:resource="http://www.semanticweb.org/andrea/ontologies/2021/4/Musei#Scultura"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <kb:nomeOpera>Maddalena penitente</kb:nomeOpera>
+    <kb:haAutore rdf:resource="http://www.semanticweb.org/andrea/ontologies/2021/4/Musei#Donatello"/>
+    <kb:conservata rdf:resource="http://www.semanticweb.org/andrea/ontologies/2021/4/Musei#Museo_dell_Opera_del_Duomo"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/David_(Michelangelo)">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <kb:conservata rdf:resource="http://www.semanticweb.org/andrea/ontologies/2021/4/Musei#Museo_del_Bargello"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/andrea/ontologies/2021/4/Musei#Scultura"/>
+    <kb:haAutore rdf:resource="http://dbpedia.org/resource/Michelangelo"/>
+    <kb:nomeOpera>David</kb:nomeOpera>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/andrea/ontologies/2021/4/Musei#Giuditta_e_Oloferne">
+    <kb:conservata rdf:resource="http://www.semanticweb.org/andrea/ontologies/2021/4/Musei#Gli_Uffizi"/>
+    <kb:nomeOpera>Giuditta e Oloferne</kb:nomeOpera>
+    <kb:haAutore rdf:resource="http://www.semanticweb.org/andrea/ontologies/2021/4/Musei#Caravaggio"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/andrea/ontologies/2021/4/Musei#Dipinto"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/andrea/ontologies/2021/4/Musei#San_Giorgio">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/andrea/ontologies/2021/4/Musei#Scultura"/>
+    <kb:conservata rdf:resource="http://www.semanticweb.org/andrea/ontologies/2021/4/Musei#Museo_del_Bargello"/>
+    <kb:haAutore rdf:resource="http://www.semanticweb.org/andrea/ontologies/2021/4/Musei#Donatello"/>
+    <kb:nomeOpera>San Giorgio</kb:nomeOpera>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/andrea/ontologies/2021/4/Musei#Uomo_vitruviano">
+    <kb:nomeOpera>Uomo vitruviano</kb:nomeOpera>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/andrea/ontologies/2021/4/Musei#Dipinto"/>
+    <kb:conservata rdf:resource="http://www.semanticweb.org/andrea/ontologies/2021/4/Musei#Gallerie_dell_Accademia"/>
+    <kb:haAutore rdf:resource="http://www.semanticweb.org/andrea/ontologies/2021/4/Musei#Leonardo_Da_Vinci"/>
+  </rdf:Description>
+</rdf:RDF>

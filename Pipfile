@@ -1,0 +1,20 @@
+[[source]]
+url = "https://pypi.python.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+flask = "*"
+flask-wtf = "*"
+flask-bootstrap = "*"
+rdflib = "*"
+"beautifulsoup4" = "*"
+requests = "*"
+rdflib-jsonld = "*"
+sparqlwrapper = "*"
+flask-googlemaps = "==0.4.0"
+
+[dev-packages]
+
+[requires]
+python_version = "3"

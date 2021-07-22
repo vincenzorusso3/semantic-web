@@ -1,0 +1,78 @@
+<div class="container3" class="form-group  required">
+    
+
+
+    <form method="POST" action="/insert" class="form" role="form" style="border-style: solid; border-radius: 25px;">
+
+        <div style="padding: 20px;">
+            <b>Inserisci nome autore</b>
+            <input type="text" name="nome_autore">
+            <br><br>
+            <input type="radio" name="radiob1" id="pitturar" value="1" onclick="test(this)" ><b>         Pittore</b></input>
+            <input type="radio" name="radiob2" id="sculturar" value="1" onclick="test2(this)"><b>         Scultore</b></input>
+            <br><br>
+            <input class="btn-btn-primary" type="submit" name="insert_autore" value="Inserisci autore">
+        </div>
+   </form>
+
+</div>
+<br><br>
+<div class="container3" class="form-group  required">
+    <form method="POST" action="/insert_opera" class="form" role="form" style="border-style: solid; border-radius: 25px;">
+        <div style="padding: 20px;">
+                <b>Inserisci nome dell'opera</b>
+                <input type="text" name="opera" style="margin-left: 188px;">
+                <br> <br>
+                <input type="radio" name="radiob" id="pittura" value="1"><b>         Dipinto</b></input>
+                <input type="radio" name="radiob" id="scultura" value="2"><b>         Scultura</b></input>
+                <br><br>
+                <b>Inserisci nome autore</b>
+                <input type="text" name="autore" style="margin-left: 211px;">
+                <br> <br>
+                <b>Inserisci nome museo in cui è conservata l'opera</b>
+                <input type="text" name="museo">
+            <br><br>
+            <input class="btn-btn-primary" type="submit" name="insert_opera" value="Inserisci opera">
+        </div>
+    </form>
+    <br><br>
+</div>
+<br>
+
+<script>
+    var radioState = false;
+    function test(element){
+
+        if(radioState == false) {
+            check();
+            radioState = true;
+        }else{
+            uncheck();
+            radioState = false;
+        }
+    }
+    function check() {
+        document.getElementById("pitturar").checked = true;
+    }
+    function uncheck() {
+        document.getElementById("pitturar").checked = false;
+    }
+
+    var radioState2 = false;
+    function test2(element){
+
+        if(radioState2 == false) {
+            check2();
+            radioState2 = true;
+        }else{
+            uncheck2();
+            radioState2 = false;
+        }
+    }
+    function check2() {
+        document.getElementById("sculturar").checked = true;
+    }
+    function uncheck2() {
+        document.getElementById("sculturar").checked = false;
+    }
+</script>

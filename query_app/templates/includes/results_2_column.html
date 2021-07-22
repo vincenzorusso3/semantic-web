@@ -1,0 +1,17 @@
+<div class="container" id="results">
+    <table class="table table-striped table-bordered table-hover">
+        <thead class="thead-inverse">
+            <tr><th>#</th>{% for v in headers %}<th>{{ v }}</th>{% endfor %}</tr>
+        </thead>
+        <tbody>
+            {% for key, value in results.items() %}
+               <tr>
+                    <th> {{ key }} </th>
+                    <td> {{ value[0]|namespace|safe }} </td>
+                    <td> {{ value[1]|namespace|safe }} </td>
+               </tr>
+            {% endfor%}
+        </tbody>
+    </table>
+</div>
+    

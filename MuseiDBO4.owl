@@ -1,0 +1,669 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/andrea/ontologies/2021/4/Musei#"
+     xml:base="http://www.semanticweb.org/andrea/ontologies/2021/4/Musei"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:ns="https://creativecommons.org/ns#"
+     xmlns:ns1="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:adms="http://www.w3.org/ns/adms#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:ontology="https://www.geonames.org/ontology#"
+     xmlns:relators="http://id.loc.gov/vocabulary/relators/">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/andrea/ontologies/2021/4/Musei">
+        <owl:imports rdf:resource="https://www.geonames.org/ontology"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/andrea/ontologies/2021/4/Musei#conserva -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andrea/ontologies/2021/4/Musei#conserva">
+        <owl:equivalentProperty>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://www.semanticweb.org/andrea/ontologies/2021/4/Musei#conservata"/>
+            </rdf:Description>
+        </owl:equivalentProperty>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andrea/ontologies/2021/4/Musei#Chiesa"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andrea/ontologies/2021/4/Musei#Museo"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/andrea/ontologies/2021/4/Musei#Opera"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andrea/ontologies/2021/4/Musei#conservata -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andrea/ontologies/2021/4/Musei#conservata">
+        <owl:equivalentProperty>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://www.semanticweb.org/andrea/ontologies/2021/4/Musei#conserva"/>
+            </rdf:Description>
+        </owl:equivalentProperty>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andrea/ontologies/2021/4/Musei#Opera"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/andrea/ontologies/2021/4/Musei#Chiesa"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/andrea/ontologies/2021/4/Musei#Museo"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andrea/ontologies/2021/4/Musei#dipinge -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andrea/ontologies/2021/4/Musei#dipinge">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andrea/ontologies/2021/4/Musei#Pittore"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/andrea/ontologies/2021/4/Musei#Dipinto"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andrea/ontologies/2021/4/Musei#haAutore -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andrea/ontologies/2021/4/Musei#haAutore">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andrea/ontologies/2021/4/Musei#Opera"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/andrea/ontologies/2021/4/Musei#Artista"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andrea/ontologies/2021/4/Musei#ospita -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andrea/ontologies/2021/4/Musei#ospita">
+        <rdfs:domain rdf:resource="https://www.geonames.org/ontology#Feature"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/andrea/ontologies/2021/4/Musei#Chiesa"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/andrea/ontologies/2021/4/Musei#Museo"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andrea/ontologies/2021/4/Musei#scolpisce -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andrea/ontologies/2021/4/Musei#scolpisce">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andrea/ontologies/2021/4/Musei#Scultore"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/andrea/ontologies/2021/4/Musei#Scultura"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.geonames.org/ontology#locatedIn -->
+
+    <rdf:Description rdf:about="https://www.geonames.org/ontology#locatedIn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andrea/ontologies/2021/4/Musei#Museo"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/andrea/ontologies/2021/4/Musei#data_fine_opera -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/andrea/ontologies/2021/4/Musei#data_fine_opera">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andrea/ontologies/2021/4/Musei#Opera"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andrea/ontologies/2021/4/Musei#data_inizio_opera -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/andrea/ontologies/2021/4/Musei#data_inizio_opera">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andrea/ontologies/2021/4/Musei#Opera"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andrea/ontologies/2021/4/Musei#nomeAutore -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/andrea/ontologies/2021/4/Musei#nomeAutore"/>
+    
+
+
+    <!-- http://www.semanticweb.org/andrea/ontologies/2021/4/Musei#nomeOpera -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/andrea/ontologies/2021/4/Musei#nomeOpera"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/andrea/ontologies/2021/4/Musei#Artista -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andrea/ontologies/2021/4/Musei#Artista"/>
+    
+
+
+    <!-- http://www.semanticweb.org/andrea/ontologies/2021/4/Musei#Chiesa -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andrea/ontologies/2021/4/Musei#Chiesa"/>
+    
+
+
+    <!-- http://www.semanticweb.org/andrea/ontologies/2021/4/Musei#Dipinto -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andrea/ontologies/2021/4/Musei#Dipinto">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andrea/ontologies/2021/4/Musei#Opera"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andrea/ontologies/2021/4/Musei#Museo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andrea/ontologies/2021/4/Musei#Museo"/>
+    
+
+
+    <!-- http://www.semanticweb.org/andrea/ontologies/2021/4/Musei#Opera -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andrea/ontologies/2021/4/Musei#Opera">
+        <rdfs:comment xml:lang="it">Un&apos; opera è un artefatto contenuto all&apos;interno di un museo.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andrea/ontologies/2021/4/Musei#Pittore -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andrea/ontologies/2021/4/Musei#Pittore">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andrea/ontologies/2021/4/Musei#Artista"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andrea/ontologies/2021/4/Musei#Scultore -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andrea/ontologies/2021/4/Musei#Scultore">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andrea/ontologies/2021/4/Musei#Artista"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andrea/ontologies/2021/4/Musei#Scultura -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andrea/ontologies/2021/4/Musei#Scultura">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andrea/ontologies/2021/4/Musei#Opera"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://dbpedia.org/resource/Banchetto_di_Erode -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Banchetto_di_Erode">
+        <rdf:type rdf:resource="http://www.semanticweb.org/andrea/ontologies/2021/4/Musei#Scultura"/>
+        <conservata rdf:resource="http://dbpedia.org/resource/Battistero_di_Siena"/>
+        <haAutore rdf:resource="http://dbpedia.org/resource/Donatello"/>
+        <data_fine_opera rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1427</data_fine_opera>
+        <data_inizio_opera rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1423</data_inizio_opera>
+        <nomeOpera>Banchetto di Erode</nomeOpera>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Basilica_di_San_Pietro -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Basilica_di_San_Pietro">
+        <rdf:type rdf:resource="http://www.semanticweb.org/andrea/ontologies/2021/4/Musei#Chiesa"/>
+        <conserva rdf:resource="http://dbpedia.org/resource/La_pietà"/>
+        <conserva rdf:resource="http://dbpedia.org/resource/Mosè"/>
+        <ontology:locatedIn rdf:resource="http://dbpedia.org/resource/Città_del_Vaticano"/>
+        <ontology:lat rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">41.902222576473854</ontology:lat>
+        <ontology:long rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12.453421714177711</ontology:long>
+        <ontology:name>Basilica di San Pietro</ontology:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Battistero_di_Siena -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Battistero_di_Siena">
+        <rdf:type rdf:resource="http://www.semanticweb.org/andrea/ontologies/2021/4/Musei#Chiesa"/>
+        <conserva rdf:resource="http://dbpedia.org/resource/Banchetto_di_Erode"/>
+        <ontology:locatedIn rdf:resource="http://dbpedia.org/resource/Siena"/>
+        <ontology:lat rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">43.31790047973962</ontology:lat>
+        <ontology:long rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">11.329186509993235</ontology:long>
+        <ontology:name>Battistero di Siena</ontology:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Cappella_Sistina -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Cappella_Sistina">
+        <rdf:type rdf:resource="http://www.semanticweb.org/andrea/ontologies/2021/4/Musei#Chiesa"/>
+        <conserva rdf:resource="http://dbpedia.org/resource/Giudizio_universale"/>
+        <ontology:locatedIn rdf:resource="http://dbpedia.org/resource/Roma"/>
+        <ontology:lat rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">41.90274284394896</ontology:lat>
+        <ontology:long rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12.454488828747785</ontology:long>
+        <ontology:name>Cappella Sistina</ontology:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Caravaggio -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Caravaggio">
+        <rdf:type rdf:resource="http://www.semanticweb.org/andrea/ontologies/2021/4/Musei#Pittore"/>
+        <dipinge rdf:resource="http://dbpedia.org/resource/Giuditta_e_Oloferne"/>
+        <dipinge rdf:resource="http://dbpedia.org/resource/Narciso"/>
+        <dipinge rdf:resource="http://dbpedia.org/resource/Vocazione_di_san_Matteo"/>
+        <nomeAutore>Caravaggio</nomeAutore>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Chiesa_di_San_Luigi -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Chiesa_di_San_Luigi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/andrea/ontologies/2021/4/Musei#Chiesa"/>
+        <conserva rdf:resource="http://dbpedia.org/resource/Vocazione_di_san_Matteo"/>
+        <ontology:locatedIn rdf:resource="http://dbpedia.org/resource/Roma"/>
+        <ontology:lat rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">41.89910152679794</ontology:lat>
+        <ontology:long rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12.475184197134777</ontology:long>
+        <ontology:name>Chiesa di San Luigi</ontology:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Città_del_Vaticano -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Città_del_Vaticano">
+        <rdf:type rdf:resource="https://www.geonames.org/ontology#Feature"/>
+        <ospita rdf:resource="http://dbpedia.org/resource/Basilica_di_San_Pietro"/>
+        <ontology:name>Città del Vaticano</ontology:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/David -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/David">
+        <rdf:type rdf:resource="http://www.semanticweb.org/andrea/ontologies/2021/4/Musei#Scultura"/>
+        <conservata rdf:resource="http://dbpedia.org/resource/Museo_del_Bargello"/>
+        <haAutore rdf:resource="http://dbpedia.org/resource/Michelangelo"/>
+        <data_fine_opera rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1504</data_fine_opera>
+        <data_inizio_opera rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1501</data_inizio_opera>
+        <nomeOpera>David</nomeOpera>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Donatello -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Donatello">
+        <rdf:type rdf:resource="http://www.semanticweb.org/andrea/ontologies/2021/4/Musei#Pittore"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/andrea/ontologies/2021/4/Musei#Scultore"/>
+        <scolpisce rdf:resource="http://dbpedia.org/resource/Banchetto_di_Erode"/>
+        <scolpisce rdf:resource="http://dbpedia.org/resource/Maddalena_penitente"/>
+        <scolpisce rdf:resource="http://dbpedia.org/resource/San_Giorgio"/>
+        <nomeAutore>Donatello</nomeAutore>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Firenze -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Firenze">
+        <rdf:type rdf:resource="https://www.geonames.org/ontology#Feature"/>
+        <ospita rdf:resource="http://dbpedia.org/resource/Gallerie_dell_Accademia"/>
+        <ospita rdf:resource="http://dbpedia.org/resource/Gli_Uffizi"/>
+        <ospita rdf:resource="http://dbpedia.org/resource/Museo_del_Bargello"/>
+        <ospita rdf:resource="http://dbpedia.org/resource/Museo_dell_Opera_del_Duomo"/>
+        <ontology:name>Firenze</ontology:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Gallerie_dell_Accademia -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Gallerie_dell_Accademia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/andrea/ontologies/2021/4/Musei#Museo"/>
+        <conserva rdf:resource="http://dbpedia.org/resource/Uomo_vitruviano"/>
+        <ontology:locatedIn rdf:resource="http://dbpedia.org/resource/Firenze"/>
+        <ontology:lat rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">43.77687613905328</ontology:lat>
+        <ontology:long rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">11.257955722487303</ontology:long>
+        <ontology:name>Galleria dell&apos;Accademia</ontology:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Gioconda -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Gioconda">
+        <rdf:type rdf:resource="http://www.semanticweb.org/andrea/ontologies/2021/4/Musei#Dipinto"/>
+        <conservata rdf:resource="http://dbpedia.org/resource/Louvre"/>
+        <haAutore rdf:resource="http://dbpedia.org/resource/Leonardo_Da_Vinci"/>
+        <data_fine_opera rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1506</data_fine_opera>
+        <data_inizio_opera rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1503</data_inizio_opera>
+        <nomeOpera>Gioconda</nomeOpera>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Giuditta_e_Oloferne -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Giuditta_e_Oloferne">
+        <rdf:type rdf:resource="http://www.semanticweb.org/andrea/ontologies/2021/4/Musei#Dipinto"/>
+        <conservata rdf:resource="http://dbpedia.org/resource/Gli_Uffizi"/>
+        <haAutore rdf:resource="http://dbpedia.org/resource/Caravaggio"/>
+        <data_fine_opera rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1602</data_fine_opera>
+        <data_inizio_opera rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1600</data_inizio_opera>
+        <nomeOpera>Giuditta e Oloferne</nomeOpera>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Giudizio_universale -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Giudizio_universale">
+        <rdf:type rdf:resource="http://www.semanticweb.org/andrea/ontologies/2021/4/Musei#Dipinto"/>
+        <conservata rdf:resource="http://dbpedia.org/resource/Cappella_Sistina"/>
+        <haAutore rdf:resource="http://dbpedia.org/resource/Michelangelo"/>
+        <data_fine_opera rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1541</data_fine_opera>
+        <data_inizio_opera rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1536</data_inizio_opera>
+        <nomeOpera>Giudizio universale</nomeOpera>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Gli_Uffizi -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Gli_Uffizi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/andrea/ontologies/2021/4/Musei#Museo"/>
+        <conserva rdf:resource="http://dbpedia.org/resource/Giuditta_e_Oloferne"/>
+        <ontology:locatedIn rdf:resource="http://dbpedia.org/resource/Firenze"/>
+        <ontology:lat rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">43.767816257154735</ontology:lat>
+        <ontology:long rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">11.255654090713053</ontology:long>
+        <ontology:name>Gli Uffizi</ontology:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/La_pietà -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/La_pietà">
+        <rdf:type rdf:resource="http://www.semanticweb.org/andrea/ontologies/2021/4/Musei#Scultura"/>
+        <conservata rdf:resource="http://dbpedia.org/resource/Basilica_di_San_Pietro"/>
+        <haAutore rdf:resource="http://dbpedia.org/resource/Michelangelo"/>
+        <data_fine_opera rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1499</data_fine_opera>
+        <data_inizio_opera rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1497</data_inizio_opera>
+        <nomeOpera>La pietà</nomeOpera>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Leonardo_Da_Vinci -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Leonardo_Da_Vinci">
+        <rdf:type rdf:resource="http://www.semanticweb.org/andrea/ontologies/2021/4/Musei#Pittore"/>
+        <dipinge rdf:resource="http://dbpedia.org/resource/Gioconda"/>
+        <dipinge rdf:resource="http://dbpedia.org/resource/Ultima_cena"/>
+        <dipinge rdf:resource="http://dbpedia.org/resource/Uomo_vitruviano"/>
+        <nomeAutore>Leonardo Da Vinci</nomeAutore>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Louvre -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Louvre">
+        <rdf:type rdf:resource="http://www.semanticweb.org/andrea/ontologies/2021/4/Musei#Museo"/>
+        <conserva rdf:resource="http://dbpedia.org/resource/Gioconda"/>
+        <ontology:locatedIn rdf:resource="http://dbpedia.org/resource/Parigi"/>
+        <ontology:lat rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">48.86074518923067</ontology:lat>
+        <ontology:long rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.3377244647883746</ontology:long>
+        <ontology:name>Louvre</ontology:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Maddalena_penitente -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Maddalena_penitente">
+        <rdf:type rdf:resource="http://www.semanticweb.org/andrea/ontologies/2021/4/Musei#Scultura"/>
+        <conservata rdf:resource="http://dbpedia.org/resource/Museo_dell_Opera_del_Duomo"/>
+        <haAutore rdf:resource="http://dbpedia.org/resource/Donatello"/>
+        <data_fine_opera rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1455</data_fine_opera>
+        <data_inizio_opera rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1453</data_inizio_opera>
+        <nomeOpera>Maddalena penitente</nomeOpera>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Michelangelo -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Michelangelo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/andrea/ontologies/2021/4/Musei#Pittore"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/andrea/ontologies/2021/4/Musei#Scultore"/>
+        <dipinge rdf:resource="http://dbpedia.org/resource/Giudizio_universale"/>
+        <scolpisce rdf:resource="http://dbpedia.org/resource/David"/>
+        <scolpisce rdf:resource="http://dbpedia.org/resource/La_pietà"/>
+        <scolpisce rdf:resource="http://dbpedia.org/resource/Mosè"/>
+        <nomeAutore>Michelangelo</nomeAutore>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Milano -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Milano">
+        <rdf:type rdf:resource="https://www.geonames.org/ontology#Feature"/>
+        <ospita rdf:resource="http://dbpedia.org/resource/Santa_Maria_delle_Grazie"/>
+        <ontology:name>Milano</ontology:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Mosè -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Mosè">
+        <rdf:type rdf:resource="http://www.semanticweb.org/andrea/ontologies/2021/4/Musei#Scultura"/>
+        <conservata rdf:resource="http://dbpedia.org/resource/Basilica_di_San_Pietro"/>
+        <haAutore rdf:resource="http://dbpedia.org/resource/Michelangelo"/>
+        <data_fine_opera rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1515</data_fine_opera>
+        <data_inizio_opera rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1513</data_inizio_opera>
+        <nomeOpera>Mosè</nomeOpera>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Museo_del_Bargello -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Museo_del_Bargello">
+        <rdf:type rdf:resource="http://www.semanticweb.org/andrea/ontologies/2021/4/Musei#Museo"/>
+        <conserva rdf:resource="http://dbpedia.org/resource/David"/>
+        <conserva rdf:resource="http://dbpedia.org/resource/San_Giorgio"/>
+        <ontology:locatedIn rdf:resource="http://dbpedia.org/resource/Firenze"/>
+        <ontology:lat rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">43.77021182600564</ontology:lat>
+        <ontology:long rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">11.257921937285063</ontology:long>
+        <ontology:name>Museo del Bargello</ontology:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Museo_dell_Opera_del_Duomo -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Museo_dell_Opera_del_Duomo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/andrea/ontologies/2021/4/Musei#Museo"/>
+        <conserva rdf:resource="http://dbpedia.org/resource/Maddalena_penitente"/>
+        <ontology:locatedIn rdf:resource="http://dbpedia.org/resource/Firenze"/>
+        <ontology:lat rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">43.77312230787081</ontology:lat>
+        <ontology:long rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">11.25806311347972</ontology:long>
+        <ontology:name>Museo dell&apos;Opera del Duomo</ontology:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Narciso -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Narciso">
+        <rdf:type rdf:resource="http://www.semanticweb.org/andrea/ontologies/2021/4/Musei#Dipinto"/>
+        <conservata rdf:resource="http://dbpedia.org/resource/Palazzo_Barberini"/>
+        <haAutore rdf:resource="http://dbpedia.org/resource/Caravaggio"/>
+        <data_fine_opera rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1599</data_fine_opera>
+        <data_inizio_opera rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1597</data_inizio_opera>
+        <nomeOpera>Narciso</nomeOpera>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Palazzo_Barberini -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Palazzo_Barberini">
+        <rdf:type rdf:resource="http://www.semanticweb.org/andrea/ontologies/2021/4/Musei#Museo"/>
+        <conserva rdf:resource="http://dbpedia.org/resource/Narciso"/>
+        <ontology:locatedIn rdf:resource="http://dbpedia.org/resource/Roma"/>
+        <ontology:lat rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">41.90311713840192</ontology:lat>
+        <ontology:long rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12.489940609706178</ontology:long>
+        <ontology:name>Palazzo Barberini</ontology:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Parigi -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Parigi">
+        <rdf:type rdf:resource="https://www.geonames.org/ontology#Feature"/>
+        <ospita rdf:resource="http://dbpedia.org/resource/Louvre"/>
+        <ontology:name>Parigi</ontology:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Roma -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Roma">
+        <rdf:type rdf:resource="https://www.geonames.org/ontology#Feature"/>
+        <ospita rdf:resource="http://dbpedia.org/resource/Cappella_Sistina"/>
+        <ospita rdf:resource="http://dbpedia.org/resource/Chiesa_di_San_Luigi"/>
+        <ospita rdf:resource="http://dbpedia.org/resource/Palazzo_Barberini"/>
+        <ontology:name>Roma</ontology:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/San_Giorgio -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/San_Giorgio">
+        <rdf:type rdf:resource="http://www.semanticweb.org/andrea/ontologies/2021/4/Musei#Scultura"/>
+        <conservata rdf:resource="http://dbpedia.org/resource/Museo_del_Bargello"/>
+        <haAutore rdf:resource="http://dbpedia.org/resource/Donatello"/>
+        <data_fine_opera rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1417</data_fine_opera>
+        <data_inizio_opera rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1415</data_inizio_opera>
+        <nomeOpera>San Giorgio</nomeOpera>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Santa_Maria_delle_Grazie -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Santa_Maria_delle_Grazie">
+        <rdf:type rdf:resource="http://www.semanticweb.org/andrea/ontologies/2021/4/Musei#Chiesa"/>
+        <conserva rdf:resource="http://dbpedia.org/resource/Ultima_cena"/>
+        <ontology:locatedIn rdf:resource="http://dbpedia.org/resource/Milano"/>
+        <ontology:lat rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">45.46592159441804</ontology:lat>
+        <ontology:long rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">9.170908454235008</ontology:long>
+        <ontology:name>Santa Maria delle Grazie</ontology:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Siena -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Siena">
+        <rdf:type rdf:resource="https://www.geonames.org/ontology#Feature"/>
+        <ospita rdf:resource="http://dbpedia.org/resource/Battistero_di_Siena"/>
+        <ontology:name>Siena</ontology:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Ultima_cena -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Ultima_cena">
+        <rdf:type rdf:resource="http://www.semanticweb.org/andrea/ontologies/2021/4/Musei#Dipinto"/>
+        <conservata rdf:resource="http://dbpedia.org/resource/Santa_Maria_delle_Grazie"/>
+        <haAutore rdf:resource="http://dbpedia.org/resource/Leonardo_Da_Vinci"/>
+        <data_fine_opera rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1498</data_fine_opera>
+        <data_inizio_opera rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1494</data_inizio_opera>
+        <nomeOpera>Ultima cena</nomeOpera>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Uomo_vitruviano -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Uomo_vitruviano">
+        <rdf:type rdf:resource="http://www.semanticweb.org/andrea/ontologies/2021/4/Musei#Dipinto"/>
+        <conservata rdf:resource="http://dbpedia.org/resource/Gallerie_dell_Accademia"/>
+        <haAutore rdf:resource="http://dbpedia.org/resource/Leonardo_Da_Vinci"/>
+        <data_fine_opera rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1490</data_fine_opera>
+        <data_inizio_opera rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1490</data_inizio_opera>
+        <nomeOpera>Uomo vitruviano</nomeOpera>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Vocazione_di_san_Matteo -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Vocazione_di_san_Matteo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/andrea/ontologies/2021/4/Musei#Dipinto"/>
+        <conservata rdf:resource="http://dbpedia.org/resource/Chiesa_di_San_Luigi"/>
+        <haAutore rdf:resource="http://dbpedia.org/resource/Caravaggio"/>
+        <data_fine_opera rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1610</data_fine_opera>
+        <data_inizio_opera rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1599</data_inizio_opera>
+        <nomeOpera>Vocazione di san Matteo</nomeOpera>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
